@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "80150fb4",
+   "id": "d9d3c5a5",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2024-06-20T17:16:47.009032Z",
-     "iopub.status.busy": "2024-06-20T17:16:47.008502Z",
-     "iopub.status.idle": "2024-06-20T17:16:48.082471Z",
-     "shell.execute_reply": "2024-06-20T17:16:48.080733Z"
+     "iopub.execute_input": "2024-06-20T17:20:41.510791Z",
+     "iopub.status.busy": "2024-06-20T17:20:41.510422Z",
+     "iopub.status.idle": "2024-06-20T17:20:42.370866Z",
+     "shell.execute_reply": "2024-06-20T17:20:42.369805Z"
     },
     "papermill": {
-     "duration": 1.083201,
-     "end_time": "2024-06-20T17:16:48.085961",
+     "duration": 0.868575,
+     "end_time": "2024-06-20T17:20:42.374831",
      "exception": false,
-     "start_time": "2024-06-20T17:16:47.002760",
+     "start_time": "2024-06-20T17:20:41.506256",
      "status": "completed"
     },
     "tags": []
@@ -56,19 +56,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "7ed974b0",
+   "id": "1131b309",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-20T17:16:48.094981Z",
-     "iopub.status.busy": "2024-06-20T17:16:48.094365Z",
-     "iopub.status.idle": "2024-06-20T17:16:49.873025Z",
-     "shell.execute_reply": "2024-06-20T17:16:49.871042Z"
+     "iopub.execute_input": "2024-06-20T17:20:42.384521Z",
+     "iopub.status.busy": "2024-06-20T17:20:42.383095Z",
+     "iopub.status.idle": "2024-06-20T17:20:43.711464Z",
+     "shell.execute_reply": "2024-06-20T17:20:43.710374Z"
     },
     "papermill": {
-     "duration": 1.788144,
-     "end_time": "2024-06-20T17:16:49.877762",
+     "duration": 1.335195,
+     "end_time": "2024-06-20T17:20:43.713823",
      "exception": false,
-     "start_time": "2024-06-20T17:16:48.089618",
+     "start_time": "2024-06-20T17:20:42.378628",
      "status": "completed"
     },
     "tags": []
@@ -276,19 +276,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "b2da3627",
+   "id": "08f47fae",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-20T17:16:49.890040Z",
-     "iopub.status.busy": "2024-06-20T17:16:49.888992Z",
-     "iopub.status.idle": "2024-06-20T17:17:00.013670Z",
-     "shell.execute_reply": "2024-06-20T17:17:00.012036Z"
+     "iopub.execute_input": "2024-06-20T17:20:43.720555Z",
+     "iopub.status.busy": "2024-06-20T17:20:43.719885Z",
+     "iopub.status.idle": "2024-06-20T17:20:44.074540Z",
+     "shell.execute_reply": "2024-06-20T17:20:44.073267Z"
     },
     "papermill": {
-     "duration": 10.134081,
-     "end_time": "2024-06-20T17:17:00.016922",
+     "duration": 0.361175,
+     "end_time": "2024-06-20T17:20:44.077528",
      "exception": false,
-     "start_time": "2024-06-20T17:16:49.882841",
+     "start_time": "2024-06-20T17:20:43.716353",
      "status": "completed"
     },
     "tags": []
@@ -298,7 +298,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "MAE is 256.67165058009994\n"
+      "MAE is 272.8184914614094\n"
      ]
     }
    ],
@@ -307,7 +307,7 @@
     "from sklearn.ensemble import RandomForestRegressor\n",
     "from sklearn.metrics import mean_absolute_error\n",
     "\n",
-    "model = RandomForestRegressor(random_state = 1)\n",
+    "model = LinearRegression(fit_intercept = True)\n",
     "model.fit(X_train, y_train)\n",
     "pred = model.predict(X_valid)\n",
     "print(\"MAE is\", mean_absolute_error(y_valid, pred))"
@@ -316,19 +316,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "90612c65",
+   "id": "bbdf4cf5",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-20T17:17:00.026400Z",
-     "iopub.status.busy": "2024-06-20T17:17:00.025962Z",
-     "iopub.status.idle": "2024-06-20T17:17:00.301533Z",
-     "shell.execute_reply": "2024-06-20T17:17:00.299418Z"
+     "iopub.execute_input": "2024-06-20T17:20:44.103111Z",
+     "iopub.status.busy": "2024-06-20T17:20:44.102498Z",
+     "iopub.status.idle": "2024-06-20T17:20:44.192340Z",
+     "shell.execute_reply": "2024-06-20T17:20:44.191186Z"
     },
     "papermill": {
-     "duration": 0.284006,
-     "end_time": "2024-06-20T17:17:00.304790",
+     "duration": 0.106174,
+     "end_time": "2024-06-20T17:20:44.195546",
      "exception": false,
-     "start_time": "2024-06-20T17:17:00.020784",
+     "start_time": "2024-06-20T17:20:44.089372",
      "status": "completed"
     },
     "tags": []
@@ -339,17 +339,17 @@
      "output_type": "stream",
      "text": [
       "         id        yield\n",
-      "0     15000  6225.455573\n",
-      "1     15001  6883.890127\n",
-      "2     15002  7683.001549\n",
-      "3     15003  6261.047325\n",
-      "4     15004  3884.370418\n",
+      "0     15000  6077.871431\n",
+      "1     15001  7027.976412\n",
+      "2     15002  7901.558462\n",
+      "3     15003  6126.894805\n",
+      "4     15004  3996.484840\n",
       "...     ...          ...\n",
-      "9995  24995  6262.192386\n",
-      "9996  24996  5328.715904\n",
-      "9997  24997  8051.861069\n",
-      "9998  24998  3820.934806\n",
-      "9999  24999  3131.373063\n",
+      "9995  24995  6045.797752\n",
+      "9996  24996  5391.897530\n",
+      "9997  24997  8167.901920\n",
+      "9998  24998  4073.828136\n",
+      "9999  24999  5211.610912\n",
       "\n",
       "[10000 rows x 2 columns]\n"
      ]
@@ -398,14 +398,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 18.112053,
-   "end_time": "2024-06-20T17:17:01.232718",
+   "duration": 5.902561,
+   "end_time": "2024-06-20T17:20:44.737385",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-20T17:16:43.120665",
+   "start_time": "2024-06-20T17:20:38.834824",
    "version": "2.5.0"
   }
  },
